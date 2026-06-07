@@ -350,7 +350,7 @@ export default function Contact() {
       ref={sectionRef}
       id="contact"
       aria-labelledby="contact-heading"
-      className="contact-section relative overflow-hidden bg-[#020617] text-white"
+      className="contact-section relative overflow-hidden"
     >
       {/* ΓöÇΓöÇ Layered background ΓöÇΓöÇ */}
       <div aria-hidden="true" className="contact-bg-mesh" />
@@ -392,7 +392,7 @@ export default function Contact() {
               className="font-black leading-[0.9] tracking-tight"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              <span className="block text-[clamp(2.75rem,6vw,4.5rem)] text-white">
+              <span className="block text-[clamp(2.75rem,6vw,4.5rem)] text-slate-900 dark:text-white">
                 Let's Start a
               </span>
               <span className="contact-heading-gradient block text-[clamp(2.75rem,6vw,4.5rem)]">
@@ -419,7 +419,7 @@ export default function Contact() {
                     transitionDelay: isVisible ? `${i * 80}ms` : "0ms",
                   }}
                 >
-                  <p className="text-lg font-black text-white sm:text-xl">{value}</p>
+                  <p className="text-lg font-black text-slate-900 dark:text-white sm:text-xl">{value}</p>
                   <p className="mt-0.5 text-[0.65rem] font-medium uppercase tracking-wider text-slate-500 sm:text-xs">
                     {label}
                   </p>
@@ -448,7 +448,7 @@ export default function Contact() {
                         <span className="block text-[0.65rem] font-bold uppercase tracking-widest text-slate-500">
                           {label}
                         </span>
-                        <span className="block truncate text-sm font-medium text-slate-300 group-hover:text-white transition-colors duration-200">
+                        <span className="block truncate text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-200">
                           {value}
                         </span>
                       </span>
@@ -491,7 +491,7 @@ export default function Contact() {
 
                 {/* Form header */}
                 <div className="mb-8">
-                  <h2 className="text-xl font-bold text-white sm:text-2xl">
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white sm:text-2xl">
                     Send a Message
                   </h2>
                   <p className="mt-1.5 text-sm text-slate-500">
